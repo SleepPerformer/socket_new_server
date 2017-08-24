@@ -11,7 +11,7 @@ import (
 func main() {
 	var tcpAddr *net.TCPAddr
 
-	tcpAddr, _ = net.ResolveTCPAddr("tcp", "172.16.100.210:6060")
+	tcpAddr, _ = net.ResolveTCPAddr("tcp", "10.0.0.1:6060")
 
 	tcpListener, _ := net.ListenTCP("tcp", tcpAddr)
 
